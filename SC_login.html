@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login-Standard Chartered</title>
+	<link rel="stylesheet" type="text/css" href="SC_login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div class="container">
+		<div class="col">
+			<ul>
+				<li><a href="new_bank.html">HOME</a></li>
+				<li><a href="SC_login.html">LOGIN</a></li>
+				<li><a href="SC_signup.html">SIGN UP</a></li>
+				<li><a href="#">CONTACT US</a></li>
+			</ul>
+			
+		</div>
+
+		<div class="image">
+		    <img src="SC_logo.png" style="height: 90px;width: 212px;">	
+	    </div>
+
+	    <div class="login">
+	    	<h1 style="font-size:40px;color: #8C194C;">Login </h1><br>
+	    	<h3 style="display: inline;">Usertype</h3>
+	    	<select style="height:22px;width: 66px;display: inline;">
+	    		<option >Admin</option>
+	    		<option>User</option>
+	    	</select><br><br><br>
+	    	<i class="fa-solid fa-id-badge" style="font-size: 25px"></i>&nbsp;&nbsp;&nbsp;<input type="text" name="" id="adminname" placeholder="E-mail or Username" style="position: relative; left: 3px;"><br><br>
+	    	<i class="fa-solid fa-key" style="font-size: 25px"></i>&nbsp;&nbsp;&nbsp;<input type="password" name="" id="adminpassword" placeholder="password"><br><br>
+	    	<button type="button"onclick=" return show()";><a href="Sc_submit.html">Login</a></button>
+	    	<br><br>
+	    	<hr style="width: 370px;position: relative;left: 51px;">
+	    	<br>
+	    	<a href="#" style="text-decoration: none;">Forgot Password?</a>
+	    	
+	    </div>
+		<script>
+			function show()
+			{
+			var aname=document.getElementById('adminname').value;
+			var apassword=document.getElementById('adminpassword').value;
+			if(aname=="abhishek" && apassword=="7379222179")
+			{
+
+				alert("Welcome to Standard Chartered Bank Of India ");
+				return true;
+			}
+			else
+			{
+				alert("Your ID and PassWord is Wrong.......");
+				return false;
+			
+			}
+			}
+		</script>
+
+</body>
+</html>

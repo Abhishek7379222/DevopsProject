@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(https://cdn5.vectorstock.com/i/1000x1000/25/39/abstract-background-vector-2482539.jpg);
+	background-size:1536px 848px;
+	background-repeat: no-repeat;
+}
+
+.container{
+	    height: 41px;
+    width: 644px;
+    position: relative;
+    left: 836px;
+    top: 14px;
+    padding-top: 12px;
+    
+}
+
+
+.container .col ul{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.container .col ul li{
+	list-style: none;
+    
+    font-size: 30px;
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0 20px;
+
+}
+.container .col ul li::after{
+	content: "";
+	height: 4px;
+	width: 0;
+	background:linear-gradient(blueviolet,darkred) ;
+	position: absolute;
+	left: 0;
+	bottom: -7px;
+	transition: 0.5s;
+}
+.container .col ul li:hover::after{
+	width: 100%;
+}
+
+.container .col ul li a{
+	text-decoration: none;
+	color: black;
+}
+.image{
+	    height: 124px;
+    width: 293px;
+    position: absolute;
+    left: -805px;
+    top: 1px;
+    
+}
+.login{
+	    height: 397px;
+    width: 434px;
+   
+    text-align: CENTER;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    right: 734px;
+    top: 131px;
+}
+.login:hover{
+	border-radius: 30px;
+	transition: 0.5s;
+	box-shadow: 0px 3px 30px grey;
+
+}
+.login input{
+	    height: 49px;
+    width: 371px;
+    border-radius: 6px;
+    border: none;
+}
+.login input{
+	border-bottom: 2px solid #21D3CB ;
+}
+.login input:focus{
+	background: skyblue;
+	border: none;
+	outline: none;
+}
+.login button{
+	    height: 40px;
+    width: 197px;
+    border-radius: 10px;
+    background:  #487DB6 ;
+    color: white;
+    position: relative;
+    left: 15px;
+    border: none	;
+}
+.login button:hover{
+	background: #21D3CB;
+	transition: 1s;
+
+}
+.login button a{
+	text-decoration: none;
+	color: white;
+}

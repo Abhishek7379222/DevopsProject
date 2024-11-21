@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(https://cdn5.vectorstock.com/i/1000x1000/25/39/abstract-background-vector-2482539.jpg);
+	background-size:1536px 848px;
+	background-repeat: no-repeat;
+}
+
+.container{
+	height: 43px;
+    width: 1306px;
+    position: relative;
+    left: 8px;
+    top: -72px;
+    padding-top: 82px;
+    
+}
+
+
+.container .col ul{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.container .col ul li{
+	list-style: none;
+    
+    font-size: 25px;
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0 20px;
+
+}
+.container .col ul li::after{
+	content: "";
+	height: 4px;
+	width: 0;
+	background:linear-gradient(blueviolet,darkred) ;
+	position: absolute;
+	left: 0;
+	bottom: -7px;
+	transition: 0.5s;
+}
+.container .col ul li:hover::after{
+	width: 100%;
+}
+
+.container .col ul li a{
+	text-decoration: none;
+	color: black;
+}
+.image{
+	    height: 124px;
+    width: 293px;
+    position: absolute;
+    left: -805px;
+    top: 1px;
+}
+.sign_up{
+	    height: 660px;
+    width: 434px;
+   
+    text-align: CENTER;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    right: 734px;
+    top: 131px;
+}
+.sign_up:hover{
+	border-radius: 10px;
+	transition: 0.5s;
+	box-shadow: 0px 3px 30px grey;
+
+}
+.sign_up input{
+	    height: 49px;
+    width: 371px;
+    border-radius: 6px;
+    border: none;
+}
+.sign_up input{
+	border-bottom: 2px solid #21D3CB ;
+}
+.sign_up input:focus{
+	background: skyblue;
+	border: none;
+	outline: none;
+}
+.sign_up button{
+	    height: 40px;
+    width: 197px;
+    border-radius: 10px;
+    background:  #487DB6 ;
+    color: white;
+    position: relative;
+    left: 15px;
+    border: none	;
+}
+.sign_up button:hover{
+	background: #21D3CB;
+	transition: 1s;
+
+}
+.sign_up button a{
+	text-decoration: none;
+	color: white;
+}

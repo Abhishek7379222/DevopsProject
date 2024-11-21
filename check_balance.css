@@ -1,0 +1,118 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(https://cdn5.vectorstock.com/i/1000x1000/25/39/abstract-background-vector-2482539.jpg);
+	background-size:1536px 848px;
+	background-repeat: no-repeat;
+}
+.container{
+	       height: 41px;
+    width: 1489px;
+    position: relative;
+    left: 18px;
+    top: 14px;
+    padding-top: 12px;
+    
+    
+}
+
+
+.container .col ul{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.container .col ul li{
+	list-style: none;
+    font-size: 24px;
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0 20px;
+
+}
+.container .col ul li::after{
+	content: "";
+	height: 4px;
+	width: 0;
+	background:linear-gradient(blueviolet,darkred) ;
+	position: absolute;
+	left: 0;
+	bottom: -7px;
+	transition: 0.5s;
+}
+.container .col ul li:hover::after{
+	width: 100%;
+}
+
+.container .col ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+.balance{
+	    height: 316px;
+    width: 434px;
+   
+    text-align: CENTER;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    right: 734px;
+    top: 131px;
+}
+.balance:hover{
+	border-radius: 30px;
+	transition: 0.5s;
+	box-shadow: 0px 3px 30px grey;
+
+}
+.balance input{
+	    height: 49px;
+    width: 371px;
+    border-radius: 6px;
+    border: none;
+    background: transparent;
+}
+.balance input{
+	border-bottom: 2px solid #21D3CB ;
+	
+}
+.balance input:focus{
+	background: transparent;
+	border: none;
+	outline: none;
+	transition: 1s;
+	
+
+	}
+
+.balance input:focus{
+	border-bottom: 3px solid green;
+	
+	transition: 4s;
+}
+
+.balance button{
+	    height: 40px;
+    width: 197px;
+    border-radius: 10px;
+    background:  #487DB6 ;
+    color: white;
+    position: relative;
+    left: 15px;
+    border: none	;
+}
+.balance button:hover{
+	background: #21D3CB;
+	transition: 1s;
+
+}
+.balance button a{
+	text-decoration: none;
+	color: white;
+}
